@@ -2,6 +2,7 @@ import { Directive, EventEmitter, Input, Output } from '@angular/core';
 
 @Directive({
   exportAs: 'toggle',
+  // This directive is instantiated on multiple selectors
   selector: 'toggle, [toggle]',
 })
 export class ToggleDirective {
