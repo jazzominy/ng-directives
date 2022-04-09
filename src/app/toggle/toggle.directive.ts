@@ -7,7 +7,7 @@ import { Directive, EventEmitter, Input, Output } from '@angular/core';
 })
 export class ToggleDirective {
 
-  @Input() on: boolean | undefined;
+  @Input() on!: boolean;
   @Output() toggled: EventEmitter<boolean> = new EventEmitter();
 
   constructor() { }

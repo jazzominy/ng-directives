@@ -6,10 +6,12 @@ import { ToggleButtonComponent } from './toggle-button.component';
 import { ToggleOffComponent } from './toggle-off.component';
 import { ToggleOnComponent } from './toggle-on.component';
 import { ToggleProviderDirective } from './toggle-provider.directive';
+import { DefaultAttributeDirective } from './default-attribute.directive';
 
 const components = [
   ToggleDirective,
   ToggleProviderDirective,
+  DefaultAttributeDirective,
   ToggleButtonComponent,
   ToggleOffComponent,
   ToggleOnComponent
