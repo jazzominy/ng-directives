@@ -1,9 +1,10 @@
 import { Component, Input } from '@angular/core';
+import { ToggleComponent } from './toggle.component';
 
 @Component({
   selector: 'app-toggle-off',
-  template: '<ng-content *ngIf="!on"></ng-content>',
+  template: '<ng-content *ngIf="!toggle.on"></ng-content>',
 })
 export class ToggleOffComponent  {
-  @Input() on!: boolean;
+  constructor(public toggle: ToggleComponent) {}
 }

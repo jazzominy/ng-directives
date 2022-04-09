@@ -1,21 +1,18 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { ToggleComponent } from './toggle.component';
 
 @Component({
   selector: 'app-toggle-button',
-  template: `<app-switch [on]="on" (click)="onClick()"></app-switch>`,
+  template: `<app-switch [on]="toggle.on" (click)="onClick()"></app-switch>`,
 })
 export class ToggleButtonComponent implements OnInit {
-
-  @Input() on: boolean | undefined;
-  @Output() toggle: EventEmitter<boolean> = new EventEmitter();
   
-  constructor() { }
+  constructor(public toggle: ToggleComponent) {}
 
   ngOnInit() {
   }
   
   onClick() {
-    this.on = !this.on;
-    this.toggle.emit(this.on);
+    this.toggle.setToggleState(!this.toggle.on);
   }
 }
