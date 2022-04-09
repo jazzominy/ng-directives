@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ToggleComponent } from './toggle.component';
+import { ToggleDirective } from './toggle.directive';
 import { SwitchComponent } from '../switch/switch.component';
 import { ToggleButtonComponent } from './toggle-button.component';
 import { ToggleOffComponent } from './toggle-off.component';
 import { ToggleOnComponent } from './toggle-on.component';
+import { ToggleProviderDirective } from './toggle-provider.directive';
 
 const components = [
-  ToggleComponent,
+  ToggleDirective,
+  ToggleProviderDirective,
   ToggleButtonComponent,
   ToggleOffComponent,
   ToggleOnComponent

@@ -1,7 +1,17 @@
-<app-toggle>
+<toggle #firstToggle="toggle">
   <app-toggle-on>Yay</app-toggle-on>
   <app-toggle-off>Nah</app-toggle-off>
   <app-toggle-button></app-toggle-button>
   <app-toggle-on>On</app-toggle-on>
   <app-toggle-off>Off</app-toggle-off>
-</app-toggle>
+</toggle>
+<hr>
+Yo this is a partition
+<hr>
+<toggle [toggleProvider]="firstToggle">
+  <app-toggle-on>Yay</app-toggle-on>
+  <app-toggle-off>Nah</app-toggle-off>
+  <app-toggle-button></app-toggle-button>
+  <app-toggle-on>On</app-toggle-on>
+  <app-toggle-off>Off</app-toggle-off>
+</toggle>

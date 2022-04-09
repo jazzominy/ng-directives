@@ -1,10 +1,10 @@
-import { AfterContentInit, Component, EventEmitter, Input, Output } from '@angular/core';
+import { Directive, EventEmitter, Input, Output } from '@angular/core';
 
-@Component({
-  selector: 'app-toggle',
-  template: `<ng-content></ng-content>`,
+@Directive({
+  exportAs: 'toggle',
+  selector: 'toggle, [toggle]',
 })
-export class ToggleComponent {
+export class ToggleDirective {
 
   @Input() on: boolean | undefined;
   @Output() toggled: EventEmitter<boolean> = new EventEmitter();
