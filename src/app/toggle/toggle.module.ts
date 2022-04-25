@@ -7,14 +7,17 @@ import { ToggleOffComponent } from './toggle-off.component';
 import { ToggleOnComponent } from './toggle-on.component';
 import { ToggleProviderDirective } from './toggle-provider.directive';
 import { DefaultAttributeDirective } from './default-attribute.directive';
+import { ToggleTemplateComponent } from './toggle-template.component';
 
 const components = [
+  SwitchComponent,
   ToggleDirective,
   ToggleProviderDirective,
   DefaultAttributeDirective,
   ToggleButtonComponent,
   ToggleOffComponent,
-  ToggleOnComponent
+  ToggleOnComponent,
+  ToggleTemplateComponent
 ]
 @NgModule({
   declarations: [

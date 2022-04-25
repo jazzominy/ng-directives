@@ -15,3 +15,11 @@ Yo this is a partition
   <app-toggle-on>On</app-toggle-on>
   <app-toggle-off>Off</app-toggle-off>
 </toggle>
+<hr>
+<div>Toggle with ng-template</div>
+<toggle-template>
+  <ng-template let-on="on" let-fns="fns">
+    {{on ? 'Yay' : 'Nah'}}
+    <app-switch [on]="on" (click)="fns.toggle(!on)"></app-switch>
+  </ng-template>
+</toggle-template>
