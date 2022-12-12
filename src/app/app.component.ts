@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'directives';
+  data = {key: 'value'}
+
+  updateData() {
+    this.data = {key: 'value update'}
+  }
 }
